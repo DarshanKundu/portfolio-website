@@ -1,0 +1,28 @@
+.header{
+    margin-top:2%;
+    display:flex;
+    justify-content: center;
+}
+.title{
+   color: #3f51b5;
+   font-size: large;
+}
+.description{
+    white-space:pre;
+    line-height: 2.0;
+}
+.topic{
+    color:#3f51b5;
+    font-weight: bold;
+}
+.date{
+    color: #3f51b5;
+    font-weight: bold;
+}
+.competition{
+    font-weight: 500;
+}
+.prize{
+    color:#3f51b5;
+    font-weight: 400;
+}

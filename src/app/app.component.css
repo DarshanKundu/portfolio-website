@@ -1,0 +1,15 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+.tabs{
+    background-color: #3f51b5;
+}
+.tab{
+    margin-left:2%;
+}
+.tabs:hover{
+    border:2px solid white ;
+}
+.container{
+    font-family: cursive;
+}
