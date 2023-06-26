@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { DataService } from 'src/app/services/data.service';
 
 @Component({
@@ -6,8 +6,11 @@ import { DataService } from 'src/app/services/data.service';
   templateUrl: './about-me.component.html',
   styleUrls: ['./about-me.component.css']
 })
-export class AboutMeComponent {
-    title="About-me"
+export class AboutMeComponent implements OnInit{
+  title="About-me"
 
-    constructor(public dataService:DataService){}
+  constructor(public dataService:DataService){}
+
+  ngOnInit(): void {
+  }
 }

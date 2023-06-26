@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
 import { Awards } from 'src/app/interfaces/awards';
 import { Projects } from 'src/app/interfaces/projects';
 import { DataService } from 'src/app/services/data.service';
@@ -8,7 +8,7 @@ import { DataService } from 'src/app/services/data.service';
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.css']
 })
-export class ProjectsComponent {
+export class ProjectsComponent implements OnInit{
 
     projectTitle:string="Projects";
 
@@ -25,6 +25,7 @@ export class ProjectsComponent {
 
     constructor(public dataService:DataService){}
 
+    position=this.dataService.toolTipPosition
     ngOnInit(){
       this.projectSource=this.dataService.projects;
       this.projectColumns=this.dataService.projectColumns;

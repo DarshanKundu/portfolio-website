@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { ProfessionalExperience } from '../interfaces/professional-experience';
 import { Projects } from '../interfaces/projects';
 import { Awards } from '../interfaces/awards';
+import { TooltipPosition } from '@angular/material/tooltip';
 
 @Injectable({
   providedIn: 'root'
@@ -77,4 +78,13 @@ export class DataService {
       "prize":"1st Prize"
     }
   ]
+
+  toolTipPosition:TooltipPosition[]=[
+    'below','right','above','left'
+  ]
+  toolTipTexts={
+    "about_me":"Click to view about me!",
+    "skills":"Click to view my skills!",
+    "certificate":"click to view certificate"
+  }
 }

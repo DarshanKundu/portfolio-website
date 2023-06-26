@@ -18,7 +18,9 @@
 
         <ng-container matColumnDef="prize">
             <th mat-header-cell *matHeaderCellDef> Prize. </th>
-            <td mat-cell class="prize" *matCellDef="let element"> {{element.prize }} </td>
+            <td mat-cell class="prize" *matCellDef="let element"
+            [matTooltipPosition]="position[1]"
+            matTooltip="{{element.prize}}"> {{element.prize }} </td>
         </ng-container>
       
         <tr mat-header-row *matHeaderRowDef="awardsColumns"></tr>

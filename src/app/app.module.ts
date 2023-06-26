@@ -11,23 +11,31 @@ import { AboutMeComponent } from './components/about-me/about-me.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ProfessionalExpComponent } from './components/professional-exp/professional-exp.component';
 import { DataService } from './services/data.service';
-import { MatTableModule } from '@angular/material/table'  
+import { MatTableModule } from '@angular/material/table';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { SkillsComponent } from './components/skills/skills.component' 
+import { HighchartsChartModule } from 'highcharts-angular';
+ 
 
+ 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutMeComponent,
     ProjectsComponent,
-    ProfessionalExpComponent
+    ProfessionalExpComponent,
+    SkillsComponent
   ],
   imports: [
+    HighchartsChartModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
-    MatTableModule
+    MatTableModule,
+    MatTooltipModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
