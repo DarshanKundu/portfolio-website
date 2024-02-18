@@ -13,7 +13,7 @@ export class DataService {
   
   personalData:any={
       "personal_info": {
-        "name":"Darshan Kundu",
+        "name":"Er. Darshan Kundu",
         "profession":"Full Stack Developer"
       },
       "about_me":{
