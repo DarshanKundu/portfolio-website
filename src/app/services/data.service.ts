@@ -30,6 +30,12 @@ export class DataService {
   
   professionalExp:ProfessionalExperience[]=[
     {
+      duration: 'Dec 2022 - Present',
+      companyName: 'Cloudtara Technologies Pvt.Ltd.',
+      position:'Full Stack Developer',
+      certificate: ''
+    },
+    {
       duration: 'Dec 2021',
       companyName: 'Kreartors Pvt.Ltd.',
       position: 'Full Stack Developer',
@@ -85,6 +91,7 @@ export class DataService {
   toolTipTexts={
     "about_me":"Click to view about me!",
     "skills":"Click to view my skills!",
-    "certificate":"click to view certificate"
+    "certificate":"click to view certificate",
+    "disabled":"disabled"
   }
 }
